@@ -20,7 +20,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   }
 
   void getData() async {
-    await Future.delayed(Duration(seconds: 4));
+    await Future.delayed(Duration(seconds: 3));
 
     bool result = await InternetConnectionChecker().hasConnection;
     if (result == true) {
