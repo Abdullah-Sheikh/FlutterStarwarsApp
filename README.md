@@ -32,13 +32,21 @@ The [SWAPI API](https://swapi.dev) was used to fetch StarWars data. <br>
 
 
 
- <img src="https://user-images.githubusercontent.com/62107887/189742092-28e9e053-bf35-4eb0-98d9-7a251d1ab4d2.png" width="325" height="650">   |   <img src="https://user-images.githubusercontent.com/62107887/189742092-28e9e053-bf35-4eb0-98d9-7a251d1ab4d2.png" width="325" height="650"> 
+ <img src="https://user-images.githubusercontent.com/62107887/189742092-28e9e053-bf35-4eb0-98d9-7a251d1ab4d2.png" width="325" height="650">   |   <img src="https://user-images.githubusercontent.com/62107887/189747222-1b543e40-9a01-4f7c-b0b6-09ba1a3b2430.png" width="325" height="650"> 
+ |   <img src="https://user-images.githubusercontent.com/62107887/189747247-e5341993-407e-458f-8431-64bffda2fae2.png" width="325" height="650"> 
  
  
-![Simulator Screen Shot - iPhone 13 - 2022-09-13 at 01 05 31](https://user-images.githubusercontent.com/62107887/189747222-1b543e40-9a01-4f7c-b0b6-09ba1a3b2430.png)
-![Uploading Simulator Screen Shot - iPhone 13 - 2022-09-13 at 01.05.47.png…]()
+ <img src="https://user-images.githubusercontent.com/62107887/189748935-34fa65b7-ab9e-477e-a617-430a7f253dbc.png" width="325" height="650">   |   <img src="https://user-images.githubusercontent.com/62107887/189748946-b3bd0a3b-c9ff-4104-b7d9-2b4b91a9ed9e.png" width="325" height="650"> 
+ |   <img src="https://user-images.githubusercontent.com/62107887/189748964-71b434c2-d9f2-4369-8a01-d4f07625808e.png" width="325" height="650"> 
+ 
+ 
+ 
+ 
 
-## 🔌 Plugins![Simulator Screen Shot - iPhone 13 - 2022-09-13 at 00 41 01](https://user-images.githubusercontent.com/62107887/189747247-e5341993-407e-458f-8431-64bffda2fae2.png)
+
+
+## 🔌 Plugins
+
 
 
 | Name                                                    | Usage                                               |
