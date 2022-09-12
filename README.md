@@ -7,12 +7,11 @@ A simple Flutter app to show StarWars Planets and their properties. The Data of 
 
 The [SWAPI API](https://swapi.dev) was used to fetch StarWars data. <br>
 <br>
-<a href="https://www.vecteezy.com/vector-art/599678-book-reading-logo-and-symbols-template-icons">App
-icon</a> <br> <br>
 
 
 
-<br> Please star⭐ the repo if you like what you see😉.
+
+<br> Please star ⭐ the repo if you like what you see 😉.
 
 ## 💻 Requirements
 
@@ -33,9 +32,14 @@ icon</a> <br> <br>
 
 
 
- <img src="https://user-images.githubusercontent.com/62107887/189742092-28e9e053-bf35-4eb0-98d9-7a251d1ab4d2.png" width="400">   |   <img src="https://user-images.githubusercontent.com/62107887/189742092-28e9e053-bf35-4eb0-98d9-7a251d1ab4d2.png" width="400">  
+ <img src="https://user-images.githubusercontent.com/62107887/189742092-28e9e053-bf35-4eb0-98d9-7a251d1ab4d2.png" width="325" height="650">   |   <img src="https://user-images.githubusercontent.com/62107887/189742092-28e9e053-bf35-4eb0-98d9-7a251d1ab4d2.png" width="325" height="650"> 
+ 
+ 
+![Simulator Screen Shot - iPhone 13 - 2022-09-13 at 01 05 31](https://user-images.githubusercontent.com/62107887/189747222-1b543e40-9a01-4f7c-b0b6-09ba1a3b2430.png)
+![Uploading Simulator Screen Shot - iPhone 13 - 2022-09-13 at 01.05.47.png…]()
 
-## 🔌 Plugins
+## 🔌 Plugins![Simulator Screen Shot - iPhone 13 - 2022-09-13 at 00 41 01](https://user-images.githubusercontent.com/62107887/189747247-e5341993-407e-458f-8431-64bffda2fae2.png)
+
 
 | Name                                                    | Usage                                               |
 | ------------------------------------------------------- | --------------------------------------------------- |
