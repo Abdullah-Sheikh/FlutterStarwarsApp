@@ -2,7 +2,7 @@
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/Abdullah_shk_.svg?style=social)](https://twitter.com/Abdullah_shk_)
 
-A simple Flutter app to show StarWars Planets and their properties. The Data of planets are get from Swapi.dev( Free to use).
+A simple Flutter app to show StarWars Planets and their properties. The Data of planets are fetch from Swapi.dev.
 
 
 The [SWAPI API](https://swapi.dev) was used to fetch StarWars data. <br>
