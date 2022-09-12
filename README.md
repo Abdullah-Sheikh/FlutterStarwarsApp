@@ -1,22 +1,53 @@
-# star_wars
+# 🪐🪐 Flutter StarWars Planets App 
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/Abdullah_shk_.svg?style=social)](https://twitter.com/Abdullah_shk_)
+
+A simple Flutter app to show StarWars Planets and their properties. The Data of planets are get from Swapi.dev( Free to use).
+
+
+The [SWAPI API](https://swapi.dev) was used to fetch StarWars data. <br>
+<br>
+<a href="https://www.vecteezy.com/vector-art/599678-book-reading-logo-and-symbols-template-icons">App
+icon</a> <br> <br>
 
 
 
-https://user-images.githubusercontent.com/62107887/182043817-4de524a8-31fa-4046-825e-2b9aaec49686.mov
+<br> Please star⭐ the repo if you like what you see😉.
+
+## 💻 Requirements
+
+- Any Operating System (ie. MacOS X, Linux, Windows)
+- Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
+- A little knowledge of Dart and Flutter
+
+## ✨ Features
+
+- [x] Star Planets.
+- [x] Planets Specs.
+- [x] Animations.
+- [x] Lottie Aimations
+
+
+## 📸 ScreenShots
 
 
 
-A new Flutter project.
 
-## Getting Started
+ <img src="https://user-images.githubusercontent.com/62107887/189742092-28e9e053-bf35-4eb0-98d9-7a251d1ab4d2.png" width="400">   |   <img src="https://user-images.githubusercontent.com/62107887/189742092-28e9e053-bf35-4eb0-98d9-7a251d1ab4d2.png" width="400">  
 
-This project is a starting point for a Flutter application.
+## 🔌 Plugins
 
-A few resources to get you started if this is your first Flutter project:
+| Name                                                    | Usage                                               |
+| ------------------------------------------------------- | --------------------------------------------------- |
+| [**Http**](https://pub.dev/packages/http)               | Http to fetch data from Api's                       |                                     
+| [**Lottie**](https://pub.dev/packages/lottie)           | Animations in Flutter.                              |
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🤓 Author(s)
+
+**Abdullah Sheikh**
+[![Twitter Follow](https://img.shields.io/twitter/follow/Abdullah_shk_.svg?style=social)](https://twitter.com/Abdullah_shk_)
+
+## 🔖 LICENCE
+
+[MIT](https://github.com/Abdullah-Sheikh/FlutterStarwarsApp/blob/master/licence)
