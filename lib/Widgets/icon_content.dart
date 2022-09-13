@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:star_wars/styleguide.dart';
 
 class IconContent extends StatelessWidget {
-  IconContent({required this.icon, required this.label, required this.value});
+  const IconContent({Key? key, required this.icon, required this.label, required this.value}) : super(key: key);
 
   final IconData icon;
   final String label;
@@ -18,7 +18,7 @@ class IconContent extends StatelessWidget {
           size: 50.0,
           color: Colors.white,
         ),
-        SizedBox(
+        const SizedBox(
           height: 15.0,
         ),
         Padding(
@@ -33,7 +33,7 @@ class IconContent extends StatelessWidget {
               right: 8.0, left: 8.0, top: 4.0, bottom: 4.0),
           child: Text(
             value,
-            style: TextStyle(
+            style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w700,
                 overflow: TextOverflow.ellipsis,

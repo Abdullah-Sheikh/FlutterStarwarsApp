@@ -4,11 +4,11 @@ import 'package:star_wars/models/character.dart';
 import 'package:star_wars/styleguide.dart';
 
 class PlanetsListing extends StatefulWidget {
-  PlanetsListing({this.planets});
+  const PlanetsListing({Key? key, required this.planets}) : super(key: key);
 
-  final planets;
+  final Map<String, dynamic> planets;
   @override
-  _PlanetsListingState createState() => _PlanetsListingState();
+  State<PlanetsListing> createState() => _PlanetsListingState();
 }
 
 class _PlanetsListingState extends State<PlanetsListing> {
@@ -36,7 +36,7 @@ class _PlanetsListingState extends State<PlanetsListing> {
               Padding(
                 padding: const EdgeInsets.only(left: 32.0, top: 8.0),
                 child: RichText(
-                  text: TextSpan(children: [
+                  text: const TextSpan(children: [
                     TextSpan(text: "Star Wars", style: AppTheme.display1),
                     TextSpan(text: "\n"),
                     TextSpan(text: "Planets", style: AppTheme.display2),

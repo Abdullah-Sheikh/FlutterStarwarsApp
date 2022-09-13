@@ -4,11 +4,13 @@ import 'package:lottie/lottie.dart';
 import 'package:star_wars/Screens/no_internet.dart';
 import 'package:star_wars/Screens/planets_listing.dart';
 
-import '../services/networking.dart';
+import '../Services/networking.dart';
 
 class LoadingScreen extends StatefulWidget {
+  const LoadingScreen({Key? key}) : super(key: key);
+
   @override
-  _LoadingScreenState createState() => _LoadingScreenState();
+  State<LoadingScreen> createState() => _LoadingScreenState();
 }
 
 class _LoadingScreenState extends State<LoadingScreen> {
@@ -20,21 +22,23 @@ class _LoadingScreenState extends State<LoadingScreen> {
   }
 
   void getData() async {
-    await Future.delayed(Duration(seconds: 3));
+    await Future.delayed(const Duration(seconds: 3));
 
     bool result = await InternetConnectionChecker().hasConnection;
     if (result == true) {
       NetworkHelpler networkHelper = NetworkHelpler();
       var planetsData = await networkHelper.getData();
 
-      print(planetsData);
+      debugPrint(planetsData);
 
+      if (!mounted) return;
       Navigator.push(context, MaterialPageRoute(builder: (context) {
         return PlanetsListing(planets: planetsData);
       }));
     } else {
+      if (!mounted) return;
       Navigator.push(context, MaterialPageRoute(builder: (context) {
-        return NoInternet();
+        return const NoInternet();
       }));
     }
   }

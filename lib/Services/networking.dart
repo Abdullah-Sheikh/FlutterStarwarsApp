@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
+import 'package:flutter/foundation.dart';
 
 class NetworkHelpler {
   String url = "https://swapi.dev/api/planets";
@@ -14,7 +15,7 @@ class NetworkHelpler {
 
       return jsonDecode(data);
     } else {
-      print(response.statusCode);
+      debugPrint('${response.statusCode}');
     }
   }
 }
