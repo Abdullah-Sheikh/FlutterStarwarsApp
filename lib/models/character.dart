@@ -13,17 +13,17 @@ List characters = [
   Character(
       name: "Tatooine",
       imagePath: "assets/images/Tatooine.webp",
-      colors: [Color(0xff659999), Color(0xfff4791f)]),
+      colors: [const Color(0xff659999), const Color(0xfff4791f)]),
   Character(
       name: "Alderaan",
       imagePath: "assets/images/alderaan_planet.png",
-      colors: [Color(0xffbdc3c7), Color(0xff2c3e50)]),
+      colors: [const Color(0xffbdc3c7), const Color(0xff2c3e50)]),
   Character(
       name: "Yavin IV",
       imagePath: "assets/images/yavin_planet.png",
-      colors: [Color(0xff2C5364), Color(0xff0F2027)]),
+      colors: [const Color(0xff2C5364), const Color(0xff0F2027)]),
   Character(
       name: "Hoth",
       imagePath: "assets/images/hoth_planet.png",
-      colors: [Color(0xff525252), Color(0xff3d72b4)]),
+      colors: [const Color(0xff525252), const Color(0xff3d72b4)]),
 ];

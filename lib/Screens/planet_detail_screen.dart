@@ -9,21 +9,21 @@ import 'package:star_wars/styleguide.dart';
 
 class PlanetDetailScreen extends StatefulWidget {
   final Character character;
-  final planet;
+  final dynamic planet;
   const PlanetDetailScreen({Key? key, required this.character, this.planet})
       : super(key: key);
 
   @override
-  _PlanetDetailScreenState createState() => _PlanetDetailScreenState();
+  State<PlanetDetailScreen> createState() => _PlanetDetailScreenState();
 }
 
 class _PlanetDetailScreenState extends State<PlanetDetailScreen> {
   String name = '';
   int population = 0;
-  String orbital_period = '';
+  String orbitalPeriod = '';
   String climate = '';
   String terrain = '';
-  String surface_water = '';
+  String surfaceWater = '';
   String diameter = '';
 
   @override
@@ -38,18 +38,18 @@ class _PlanetDetailScreenState extends State<PlanetDetailScreen> {
       name = (planet)['name'];
       String temp = (planet)['population'];
       population = int.parse(temp);
-      orbital_period = (planet)['orbital_period'];
+      orbitalPeriod = (planet)['orbital_period'];
       climate = (planet)['climate'];
       terrain = (planet)['terrain'];
-      surface_water = (planet)['surface_water'];
+      surfaceWater = (planet)['surface_water'];
       diameter = (planet)['diameter'];
     } catch (e) {
       population = 0;
       name = (planet)['name'];
-      orbital_period = (planet)['orbital_period'];
+      orbitalPeriod = (planet)['orbital_period'];
       climate = (planet)['climate'];
       terrain = (planet)['terrain'];
-      surface_water = (planet)['surface_water'];
+      surfaceWater = (planet)['surface_water'];
       diameter = (planet)['diameter'];
     }
   }
@@ -79,13 +79,13 @@ class _PlanetDetailScreenState extends State<PlanetDetailScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 8.0, left: 16.0),
                 child: IconButton(
-                  icon: Icon(Icons.close),
+                  icon: const Icon(Icons.close),
                   iconSize: 40,
                   color: Colors.white.withOpacity(0.9),
                   onPressed: () {
@@ -114,11 +114,9 @@ class _PlanetDetailScreenState extends State<PlanetDetailScreen> {
                   tag: "name-${widget.character.name}",
                   child: Material(
                     color: Colors.transparent,
-                    child: Container(
-                      child: Text(
-                        name,
-                        style: AppTheme.heading,
-                      ),
+                    child: Text(
+                      name,
+                      style: AppTheme.heading,
                     ),
                   ),
                 ),
@@ -131,7 +129,7 @@ class _PlanetDetailScreenState extends State<PlanetDetailScreen> {
                   style: AppTheme.subHeading,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10.0,
               ),
               Row(
@@ -142,7 +140,7 @@ class _PlanetDetailScreenState extends State<PlanetDetailScreen> {
                       cardWidget: IconContent(
                         icon: FontAwesomeIcons.earthAmericas,
                         label: 'Orbital Period',
-                        value: orbital_period,
+                        value: orbitalPeriod,
                       ),
                     ),
                   ),
@@ -176,7 +174,7 @@ class _PlanetDetailScreenState extends State<PlanetDetailScreen> {
                       cardWidget: IconContent(
                         icon: FontAwesomeIcons.water,
                         label: 'Surface water',
-                        value: surface_water,
+                        value: surfaceWater,
                       ),
                     ),
                   ),
@@ -192,7 +190,7 @@ class _PlanetDetailScreenState extends State<PlanetDetailScreen> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 35.0,
               ),
             ],

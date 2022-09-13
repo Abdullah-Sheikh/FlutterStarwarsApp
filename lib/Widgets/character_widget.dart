@@ -7,7 +7,7 @@ class CharacterWidget extends StatefulWidget {
   final Character character;
   final PageController pageController;
   final int currentPage;
-  final planet;
+  final dynamic planet;
   const CharacterWidget(
       {Key? key,
       required this.character,
@@ -17,7 +17,7 @@ class CharacterWidget extends StatefulWidget {
       : super(key: key);
 
   @override
-  _CharacterWidgetState createState() => _CharacterWidgetState();
+  State<CharacterWidget> createState() => _CharacterWidgetState();
 }
 
 class _CharacterWidgetState extends State<CharacterWidget> {
@@ -53,12 +53,12 @@ class _CharacterWidgetState extends State<CharacterWidget> {
           builder: (context, child) {
             double value = 1;
 
-            if (widget.pageController.hasClients) if (widget
-                .pageController.position.haveDimensions) {
+            if (widget.pageController.hasClients &&
+                widget.pageController.position.haveDimensions) {
               value = widget.pageController.page! - widget.currentPage;
               value = (1 - (value.abs() * 0.6)).clamp(0.0, 1.0);
               if (widget.currentPage == 0) {
-                print(value);
+                debugPrint('$value');
               }
             }
 
@@ -85,7 +85,7 @@ class _CharacterWidgetState extends State<CharacterWidget> {
                   ),
                 ),
                 Align(
-                  alignment: Alignment(0, -0.5),
+                  alignment: const Alignment(0, -0.5),
                   child: Hero(
                     tag: "image-${widget.character.name}",
                     child: Image.asset(
@@ -106,11 +106,9 @@ class _CharacterWidgetState extends State<CharacterWidget> {
                         tag: "name-${widget.character.name}",
                         child: Material(
                           color: Colors.transparent,
-                          child: Container(
-                            child: Text(
-                              name,
-                              style: AppTheme.heading,
-                            ),
+                          child: Text(
+                            name,
+                            style: AppTheme.heading,
                           ),
                         ),
                       ),
